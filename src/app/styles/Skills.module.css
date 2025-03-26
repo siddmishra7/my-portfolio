@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background: rgb(1, 35, 101);
+    gap: 30px;
+    border-top: 2px solid white;
+    padding: 20px;
+  }
+  
+  .section {
+    text-align: center;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    color: #ffffff;
+  }
+  
+  .cardsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  

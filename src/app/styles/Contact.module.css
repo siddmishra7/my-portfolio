@@ -1,0 +1,94 @@
+/* ContactMe.module.css */
+.contactSection {
+  background: linear-gradient(90deg, rgba(34,0,204,1) 0%, rgba(32,0,117,1) 27%, rgba(32,0,117,1) 73%, rgba(34,0,204,1) 100%);
+  padding: 50px 20px;
+    border-top: 2px solid white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contactHeading {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .contactDescription {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: rgb(211, 211, 211);
+  }
+  
+  .contactMethods {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* Makes it responsive */
+  }
+  
+  .method {
+    text-align: center;
+    max-width: 600px; /* Prevents it from becoming too wide on large screens */
+  }
+  
+  .contactLink {
+    font-size: 1.2rem;
+    color: #00ddff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .contactLink:hover {
+    text-decoration: underline;
+  }
+  
+  .socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Makes it responsive */
+  }
+  
+  .socialLink {
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .socialLink:hover {
+    color: #acaeaf;
+  }
+  
+  .icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    object-fit:fill;
+    background-color: white;
+    opacity: 80%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .icon:hover{
+    opacity: 100%;
+    transform: translateY(-5px);
+  }
+
+  .xlogo {
+    width: 50px;
+    padding: 6px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    object-fit:fill;
+    background-color: white;
+    opacity: 80%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .xlogo:hover{
+    opacity: 100%;
+    transform: translateY(-5px);
+  }

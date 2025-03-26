@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+body {
+  background: #232323;
+  color: #fff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.education-section {
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 51.5px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-top: #fff 2px solid;
+  background: #000e3a;
+  overflow: hidden;
+
+}
+
+.education-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cards-container {
+  display: grid;
+  max-width: 820px;
+  min-width: 340px;
+  grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 30px;
+  margin: auto;
+  justify-items: center;
+}
+
+.education-card,
+.info-card {
+  background: linear-gradient(90deg, rgb(0, 156, 212) 0%, rgb(1, 54, 212) 27%, rgb(1, 54, 212) 73%, rgb(0, 156, 212) 100%);
+  padding: 20px;
+  border-left: 2px solid #ffff00;
+  border-right: 2px solid #ffff00;
+  border-radius: 10px;
+  width: 100%;
+}
+
+
+.education-card h3,
+.info-card h3 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.education-card .institution,
+.education-card .year {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.info-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info-card ul li {
+  padding: 5px 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.info-card ul li::before {
+  content: '•';
+  margin-right: 8px;
+  color: #3498db;
+}
+/* styles/SkillsSection.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* No gaps between sections */
+}
+
