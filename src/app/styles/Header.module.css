@@ -1,79 +1,90 @@
 /* styles/Header.module.css */
 
 .header {
-    padding: 0.4rem 2rem;
-    background-color: rgb(0, 0, 74);
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid white;
-    border-top: 2px solid white;
-  }
-  
-  
-  .nav {
-    display: flex;
-  }
-  
-  .navList {
-    list-style-type: none;
-    font-size: 1.4rem;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
+  padding: 0.4rem 2rem;
+  background-color: rgb(0, 0, 74);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+}
 
-  /* Menu Icon (Hamburger) */
-.menuIcon {
+
+.nav {
+  display: flex;
+  flex-grow: 1; /* Ensure the navigation takes up remaining space */
+
+}
+
+.navList {
+  list-style-type: none;
+  font-size: 1.4rem;
+  display: flex;
+  margin-left: auto;
+  padding: 0;
+}
+
+.hamburger {
   display: none;
-  font-size: 2rem;
+  font-size: 22px;
   cursor: pointer;
 }
-  
-  .navItem {
-    margin-left: 20px;
-  }
 
-  .navItem:hover{
-    transform: scale(1.1);
-  }
-
-
-/* Media Queries for Responsive Menu */
-@media (max-width: 620px) {
-  /* By default, hide links on smaller screens */
-  .navList {
-    display: none; /* Hide the menu by default */
-    position: absolute;
-    top: 60px; /* Position the menu below the navbar */
-    right: 20px;
-    background-color: #ffffff;
-    width: 200px;
-    border-radius: 5px;
-    padding: 10px;
-    flex-direction: column;
-  }
-
-  /* Show the links when active */
-  .navList.active {
-    display: flex; /* Show the menu when 'active' class is added */
-  }
-
-  /* Show the hamburger icon on smaller screens */
-  .menuIcon {
-    display: block; /* Show the hamburger icon on small screens */
-    margin-left: 20px;
-  }
-
-  /* Styling for the individual menu items */
-  .navList .navItem {
-    padding: 5px 0;
-    border-bottom: solid 1px black;
-    margin: 4px;
-    color: black;
-    text-align: center;
-  }
+.navItem {
+  margin-left: 20px;
 }
 
-  
+.navItem:hover {
+  transform: scale(1.1);
+}
+
+/* Side Menu */
+.sidemenu {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #173854;  
+  padding: 20px;
+  transition: left 1s ease;
+}
+
+
+.sidemenu .navList {
+  list-style-type: none;
+  display: block;
+  font-size: 1.8rem;
+  padding-right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.sidemenu .navItem {
+  margin-bottom: 20px;
+  text-align: center; /* Ensure the text is centered in each item */
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 735px) {
+  .nav {
+    display: none;
+  }
+
+
+  .hamburger {
+    display: block;
+  }
+
+  .sidemenu.active {
+    display: block;
+    left: 0;
+  }
+}

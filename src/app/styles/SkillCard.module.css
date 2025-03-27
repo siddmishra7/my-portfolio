@@ -6,7 +6,7 @@
     padding: 40px;
     width: 250px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease,  box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -17,7 +17,8 @@
   
   .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 12px white;
+    border: solid 1px rgb(255, 255, 255);
   }
   
   .logo {
@@ -31,4 +32,5 @@
     font-size: 22px;
     color: white;
   }
+  
   

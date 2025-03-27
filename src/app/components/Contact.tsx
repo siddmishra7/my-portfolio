@@ -16,7 +16,7 @@ const ContactMe: React.FC = () => {
         <div className={styles.method}>
           <h3>Email</h3>
           <p>
-            <a href="mailto:your.email@example.com" className={styles.contactLink}>
+            <a href="mailto:siddm2024@gmail.com" className={styles.contactLink}>
               siddm2024@gmail.com
             </a>
           </p>
@@ -25,7 +25,7 @@ const ContactMe: React.FC = () => {
         <div className={styles.method}>
           <h3>Phone</h3>
           <p>
-            <a href="tel:+1234567890" className={styles.contactLink}>
+            <a href="tel:+91 9899321545" className={styles.contactLink}>
              +91 9899321545
             </a>
           </p>
@@ -43,7 +43,7 @@ const ContactMe: React.FC = () => {
           <img title='LinkedIn Profile' src="/linkedinlogo.png" alt="LinkedIn" className={styles.icon} />
         </a>
         <a
-          href="/"
+          href="https://github.com/siddmishra7"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.socialLink}

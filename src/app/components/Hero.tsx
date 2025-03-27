@@ -10,9 +10,9 @@ const Hero = () => {
         
         {/* Introduction paragraph */}
         <p className={styles.heroIntro}>
-          Hello! I'm Siddharth Mishra, a Computer Science Enthusiast. 
+          Hello! I&apos;m Siddharth Mishra, a Computer Science Enthusiast. 
           I specialize in creating modern, responsive websites and web applications that help businesses grow. 
-          <br />Let's build something amazing together!
+          <br />Let&apos;s build something amazing together!
         </p>
 
         <a href="#projects" className={styles.ctaButton}>See My Work</a>

@@ -76,6 +76,12 @@
     transform: translateY(-5px);
   }
 
+
+  .icon:focus-within {
+    opacity: 100%;
+    transform: translateY(-5px);
+}
+
   .xlogo {
     width: 50px;
     padding: 6px;

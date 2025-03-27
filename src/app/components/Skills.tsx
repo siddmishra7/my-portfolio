@@ -7,21 +7,21 @@ const SkillsSection: React.FC = () => {
     { name: 'JavaScript', logoUrl: '/javascriptlogo.png' },
     { name: 'React', logoUrl: '/react2.png' },
     { name: 'Node.js', logoUrl: '/node.png' },
-    { name: 'Next js', logoUrl: '/nextjs.png' },
+    { name: 'Next.js', logoUrl: '/nextjs.png' },
   ];
 
   const learningSkills = [
-    { name: 'GraphQL', logoUrl: '/logo.png' },
-    { name: 'Docker', logoUrl: '/logos/docker.png' },
-    { name: 'Kubernetes', logoUrl: '/logos/kubernetes.png' },
-    { name: 'Machine Learning', logoUrl: '/logos/ml.png' },
+    { name: 'TypeScript', logoUrl: 'typescript.png' },
+    { name: 'MongoDB', logoUrl: 'MongoDB.png' },
+    { name: 'Express.js', logoUrl: 'express.png' },
+    { name: 'Java', logoUrl: 'java.png' },
   ];
 
   return (
     <section id='skills'>
     <div className={styles.container}>
       <div className={styles.section}>
-        <h2 className={styles.sectionTitle}>Core Skills</h2>
+        <h2 className={styles.sectionTitle}>Core</h2>
         <div className={styles.cardsContainer}>
           {coreSkills.map((skill, index) => (
             <SkillCard key={index} name={skill.name} logoUrl={skill.logoUrl} />
@@ -30,7 +30,7 @@ const SkillsSection: React.FC = () => {
       </div>
 
       <div className={styles.section}>
-        <h2 className={styles.sectionTitle}>Learning Skills</h2>
+        <h2 className={styles.sectionTitle}>Learning</h2>
         <div className={styles.cardsContainer}>
           {learningSkills.map((skill, index) => (
             <SkillCard key={index} name={skill.name} logoUrl={skill.logoUrl} />
