@@ -39,13 +39,13 @@ const ContactMe: React.FC = () => {
       <StyledWrapper>
       <div className="card">
 
-        <a className="socialContainer containerOne" href="#">
+        <a className="socialContainer containerOne" href="https://github.com/siddmishra7">
           <img title='Github Profile' className="socialimg githubimg" src="/GitHub.png" alt="logo" />
         </a>
-        <a className="socialContainer containerThree" href="#">
+        <a className="socialContainer containerThree" href="https://www.linkedin.com/in/siddharth-mishra-882035352/">
         <img title='Linkedin Profile' className="socialimg linkedinimg" src="/linkedin2.jpg" alt="logo" />
         </a>
-        <a className="socialContainer containerFour" href="#">
+        <a className="socialContainer containerFour" href="https://x.com/sidd12112">
         <img title='X Profile' className="socialimgx xlogoimg" src="/xlogo1.png" alt="logo" />
         </a>
       </div>
