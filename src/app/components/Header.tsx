@@ -11,8 +11,10 @@ import styles from '../styles/Header.module.css'; // Import the CSS module
 
 
 const Header: React.FC = () => {
- 
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -62,31 +64,39 @@ const Header: React.FC = () => {
             <Link href="#contact">Contact</Link>
           </li>
         </ul>
-        </nav>
-        <nav className={styles.navBar}>
+      </nav>
+      <nav className={styles.navBar}>
         <div className={styles.hamburger} onClick={toggleMenu}>
-              ☰
+          ☰
         </div>
         <aside className={`${styles.sidemenu} ${isMenuOpen ? styles.active : ''}`}>
-        <ul className={styles.navList}>
-          <li className={styles.navItem}>
-            <Link href="#about" onClick={handleScrollToTop}>About</Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link href="#education">Education</Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link href="#skills">Skills</Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link href="#projects">Projects</Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link href="#contact">Contact</Link>
-          </li>
-        </ul>
+          <div className='border-b-2 border-white mb-4 h-[28.5px] w-[250px] ml-[-20px]'>
+            <span className='text-lg ml-2'>Navigations</span>
+          </div>
+          <ul className={styles.navList}>
+            <li className={styles.navItem}>
+              <Link href="#about" onClick={(e) => {
+                e.preventDefault();            // Prevent default anchor behavior
+                setIsMenuOpen(false);          // Close the menu
+                handleScrollToTop(e);          // Call your scroll function
+              }}>About</Link>
+            </li>
+            <li className={styles.navItem}>
+              <Link href="#education" onClick={() => setIsMenuOpen(false)}>Education</Link>
+            </li>
+            <li className={styles.navItem}>
+              <Link href="#skills" onClick={() => setIsMenuOpen(false)}>Skills</Link>
+            </li>
+            <li className={styles.navItem}>
+              <Link href="#projects" onClick={() => setIsMenuOpen(false)}>Projects</Link>
+            </li>
+            <li className={styles.navItem}>
+              <Link href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+            </li>
+          </ul>
         </aside>
-        </nav>
+      </nav>
+
 
     </header>
   );

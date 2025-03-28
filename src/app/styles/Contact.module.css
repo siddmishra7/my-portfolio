@@ -98,3 +98,8 @@
     opacity: 100%;
     transform: translateY(-5px);
   }
+
+  .xlogo:focus-within {
+    opacity: 100%;
+    transform: translateY(-5px);
+}
