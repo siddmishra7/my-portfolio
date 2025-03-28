@@ -4,7 +4,7 @@
     background: rgb(1, 35, 101);
     gap: 30px;
     border-top: 2px solid white;
-    padding: 23.2px;
+    padding: 6px;
   }
   
   .section {
@@ -23,5 +23,12 @@
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    margin-bottom: 34.2px;
   }
-  
+
+  .cardsContainer1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }

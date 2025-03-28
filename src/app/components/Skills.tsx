@@ -22,7 +22,7 @@ const SkillsSection: React.FC = () => {
     <div className={styles.container}>
       <div className={styles.section}>
         <h2 className={styles.sectionTitle}>Core</h2>
-        <div className={styles.cardsContainer}>
+        <div className={styles.cardsContainer1}>
           {coreSkills.map((skill, index) => (
             <SkillCard key={index} name={skill.name} logoUrl={skill.logoUrl} />
           ))}
