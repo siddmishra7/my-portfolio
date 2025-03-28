@@ -71,7 +71,7 @@ const Header: React.FC = () => {
         </div>
         <aside className={`${styles.sidemenu} ${isMenuOpen ? styles.active : ''}`}>
           <div className='border-b-2 border-white mb-4 h-[28.5px] w-[250px] ml-[-20px]'>
-            <span className='text-lg ml-2'>Navigations</span>
+            <span className='text-lg ml-2 text-gray-400'>Navigations</span>
           </div>
           <ul className={styles.navList}>
             <li className={styles.navItem}>

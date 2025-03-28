@@ -1,9 +1,16 @@
+"use client"
 
 // components/ContactMe.tsx
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../styles/Contact.module.css'; // Import the CSS Module
 
 const ContactMe: React.FC = () => {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleButtonClick = () => {
+    setIsClicked(!isClicked);  // Toggle the clicked state
+  };
+
   return (
     <section id='contact' className={styles.contactSection}>
       <h2 className={styles.contactHeading}>Contact Me</h2>
@@ -33,7 +40,7 @@ const ContactMe: React.FC = () => {
       </div>
 
       {/* Social Media Links */}
-      <div  className={styles.socialLinks}>
+      <div className={styles.socialLinks}>
         <a 
           href="https://www.linkedin.com/in/siddharth-mishra-882035352/"
           target="_blank"
