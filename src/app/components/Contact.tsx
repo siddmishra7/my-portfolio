@@ -1,15 +1,7 @@
-"use client"
-
-// components/ContactMe.tsx
-import React, { useState } from 'react';
-import styles from '../styles/Contact.module.css'; // Import the CSS Module
+import React from 'react';
+import styles from '../styles/Contact.module.css';
 
 const ContactMe: React.FC = () => {
-  const [isClicked, setIsClicked] = useState(false);
-
-  const handleButtonClick = () => {
-    setIsClicked(!isClicked);  // Toggle the clicked state
-  };
 
   return (
     <section id='contact' className={styles.contactSection}>
